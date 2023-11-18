@@ -1,7 +1,4 @@
-#define a1  12
-#define a2  13
-#define b1  11
-#define b2  10
+
 
 
 
@@ -33,10 +30,7 @@ int key4=0;
 void setup() {
   // put your setup code here, to run once:
 Serial.begin(9600);
-pinMode(a1,OUTPUT);
-pinMode(a2,OUTPUT);
-pinMode(b1,OUTPUT);
-pinMode(b2,OUTPUT);
+
 
 }
 
@@ -102,43 +96,4 @@ Stop();
 
 
 
-void Forward() {
-  digitalWrite(a1,HIGH);
-  digitalWrite(a2,LOW);
-  digitalWrite(b1,HIGH);
-  digitalWrite(b2,LOW);
-}
 
-
-
-void Backward(){
-  digitalWrite(a1,LOW);
-  digitalWrite(a2,HIGH);
-  digitalWrite(b1,LOW);
-  digitalWrite(b2,HIGH);
-}
-
-
-
-void Right() {
-  digitalWrite(a1,LOW);
-  digitalWrite(a2,HIGH);
-  digitalWrite(b1,HIGH);
-  digitalWrite(b2,LOW);
-}
-
-
-
-void Left() {
-  digitalWrite(a1,HIGH);
-  digitalWrite(a2,LOW);
-  digitalWrite(b1,LOW);
-  digitalWrite(b2,HIGH);
-}
-
-void Stop(){
-  digitalWrite(a1,LOW);
-  digitalWrite(a2,LOW);
-  digitalWrite(b1,LOW);
-  digitalWrite(b2,LOW);  
-}
